@@ -19,3 +19,9 @@ void* withdraw(void* arg) {
        pthread_mutex_unlock(&lock);
        return nullptr;
 }
+int main()
+ {
+    pthread_mutex_init(&lock,nullptr);
+    for(int i=0;i<3;i++) {
+        pthread_join(customers[i]),nullptr);
+    }
