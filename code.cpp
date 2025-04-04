@@ -1,8 +1,9 @@
 #include<iostream>
-#include<thread.h>
+#include<thread.h>  
 #include<unistd.h>
 int balance = 1000;
 pthread_mutex_t lock;
+
 void* withdraw(void* arg) {
     int amount = *(int*)arg;
     pthread_mutex_lock(&lock);
@@ -17,11 +18,19 @@ void* withdraw(void* arg) {
         std::cout<<"Insufficient balance\n";
        }
        pthread_mutex_unlock(&lock);
-       return nullptr;
+       return nullptr; 
 }
+
 int main()
  {
     pthread_mutex_init(&lock,nullptr);
+    
     for(int i=0;i<3;i++) {
         pthread_join(customers[i]),nullptr);
     }
+    
+    pthread_mutex_destroy(&lock);
+    std::cout<<"final balance: "<<balance<<"\n";
+
+    return 0
+ }
