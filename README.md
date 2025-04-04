@@ -1,1 +1,5 @@
-# OS-Project
+#OS-Project - Real-time multi-threaded application simulator
+The Real-Time Multi-Threaded Application Simulator functions as a tool for simulating environments where multiple threads operate simultaneously and share resources under time-based requirements. The project shows operating system behavior regarding real-time execution through multi-threaded approaches which integrate scheduling features along with synchronization methods and inter-thread messaging mechanisms.
+Real-time systems require efficient thread management because tasks need to finish their operations within precise deadlines. Real-time scheduling algorithms including Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF) will be presented in the simulator plus synchronization features like mutexes and semaphores and condition variables to prevent execution issues from occurring during job completion.
+Users can view through either a graphical user interface or text-based console interface how parallel threads run simultaneously with real-time restrictions that affect system efficiency. The platform enables users to alter execution times and scheduling policies and task priorities for observing multiple results.
+
