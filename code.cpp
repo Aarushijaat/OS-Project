@@ -39,6 +39,7 @@ int main() {
     pthread_mutex_destroy(&lock);
     std::cout << "Final balance: " << balance << "\n";
 //working properly
+//not happening
 
     return 0;
 }
